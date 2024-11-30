@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <!-- <link rel="stylesheet" href="css/all.css"> -->
+
+
+
+
+    <title>Todo</title>
+  </head>
+  <body>
+    <section class="todo">
+    <div class="head">
+      <h2>To-do list </h2>
+      <div class="icons">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-box-archive" id="archievedButton"></i>
+      <i class="fa-solid fa-house" id="home"></i>
+    </div>
+    </div>
+    <!-- Feature -->
+      <div class="input-search" style="width: 100%;">
+        <input
+        type="text"
+        class="search-field"
+        id="todoInputSearch"
+        placeholder="Search a task"
+        />
+        <!-- <button class="btn-search">Search</button> -->
+      </div>
+      <!-- End Feature -->
+      <div class="input">
+        <input
+          type="text"
+          class="input-field"
+          id="todoInput"
+          placeholder="Add a new todo"
+        />
+        <button class="btn">Add</button>
+      </div>
+        
+        
+        
+     
+      <ul class="scroll">
+        <li id="todoList"></li>
+      </ul>
+      <div>
+        <hr class="counter" />
+        <div class="counter-container">
+          <p class="todoCount-p"><span id="todoCount">0</span> Incompleted</p>
+          <button id="deleteCompletedButton">Delete Completed Tasks</button>
+          <!-- <button id="deleteButton">Delete All</button> -->
+          <i class="fa-solid fa-trash" id="deleteButton"></i>
+          <!-- <button id="archievedButton">Archieved Tasks</button> -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <p class="made-by">Made By</p>
+        <p class="author">Zeinab Hassan</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
